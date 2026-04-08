@@ -1,0 +1,30 @@
+{
+  "binance": {
+    "api_key": "your_binance_api_key_here",
+    "api_secret": "your_binance_api_secret_here",
+    "testnet": true
+  },
+  "anthropic": {
+    "api_key": "your_anthropic_key_here"
+  },
+  "trading": {
+    "symbols": ["BTCUSDT", "ETHUSDT", "SOLUSDT"],
+    "leverage": 15,
+    "max_positions": 2,
+    "min_confidence": 65,
+    "scan_interval_seconds": 10,
+    "max_hold_minutes": 45
+  },
+  "risk": {
+    "risk_per_trade_min_pct": 2.0,
+    "risk_per_trade_max_pct": 5.0,
+    "daily_max_loss_pct": 10.0,
+    "max_consecutive_losses": 5,
+    "sl_atr_mult": 1.5,
+    "tp1_rr": 1.0,
+    "tp2_rr": 1.8,
+    "min_sl_pct": 0.002,
+    "min_quantity": 0.001,
+    "emergency_close_pct": 35
+  }
+}
